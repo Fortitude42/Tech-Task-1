@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/home.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<title>Home Page</title>	
+</head>
+
+<body>			
+	<img id="big-triangle" src="img/big-triangle.png" width="680" alt="Triangle">
+	<img id="woman" src="img/woman.png" width="430" alt="Woman">
+	<img id="title" src="img/Title.png" width="283" height="417" alt=""/>
+	<img id="player" src="img/player.png" alt=""/>
+	<div id="video" hidden>
+		<embed style="width:165px;height: 90px;" src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1&mute=1"></embed>
+	</div>
+
+	<div class="quote">
+		<img id="left-chevron" height="48" width="32" src="img/left-chevron.svg" hidden/>
+		<div id="left-chevron-gap"></div>
+		<div class="q-rel">
+			<div class="q-marks">“</div>
+			<div id="q-text"></div>
+			<div id="q-author"></div>
+			<div id="q-circles">
+				<img id="cw1" src="img/white-circle.svg" height="8" hidden/>
+				<img id="cb1" src="img/gray-circle.svg" height="8" />
+				<img id="cw2" src="img/white-circle.svg" height="8" />
+				<img id="cb2" src="img/gray-circle.svg" height="8" hidden/>
+				<img id="cw3" src="img/white-circle.svg" height="8" />
+				<img id="cb3" src="img/gray-circle.svg" height="8" hidden/>
+			</div>
+		</div>
+		<img id="right-chevron"  height="48" width="36" src="img/right-chevron.svg"/>
+	</div>
+
+	<div class="navbar">
+		<div class="navbar-left">
+			<img id="small-triangle" src="img/big-triangle.png" height="90" width="96" alt="Triangle">			
+			<span>penrose</span>
+		</div>
+
+		<div class="navbar-right">
+			<span class="navbar-button">HOME</span>
+			
+			<a class="navbar-button navbar-button-hover" href="/new-collections">				
+				NEW COLLECTIONS
+			</a>
+
+			<div class="navbar-select">
+				<div class="navbar-option" id="store-option">
+					STORE
+					<div id="cursor-down" class="cursor-position" >
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+
+					<div id="cursor-up" class="cursor-position" hidden>
+						<i class="fa-solid fa-chevron-up"></i>
+					</div>
+				</div>
+				<div class="navbar-option-first" id="women-option" hidden>
+					<a href="/women">Women</a>
+				</div>
+				<div class="navbar-option-middle" id="men-option" hidden>
+					<a href="/men">Men</a>					
+				</div>
+				<div class="navbar-option-last" id="kids-option" hidden>
+					<a href="/kids">Kids</a>
+				</div>
+			</div>
+
+			<a class="navbar-button navbar-button-hover" href="/contacts">CONTACTS</a>
+		</div>
+	</div>
+
+	<script src="js/home.js"></script>
+</body>
+</html>
