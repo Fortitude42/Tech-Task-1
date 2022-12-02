@@ -180,6 +180,10 @@ body{
 	cursor: pointer;
 }
 
+.navbar-option-first:hover {
+	background-color: #6684FF;
+}
+
 .navbar-option-middle{
 	background-color:#FFFFFF;		
 	width:100%;
@@ -189,6 +193,10 @@ body{
 	color:#0000cc;
 	font-weight: 600;
 	cursor: pointer;
+}
+
+.navbar-option-middle:hover {
+	background-color: #6684FF;
 }
 
 .navbar-option-last{
@@ -202,6 +210,10 @@ body{
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 	cursor: pointer;
+}
+
+.navbar-option-last:hover {
+	background-color: #6684FF;
 }
 
 .navbar-option:hover{
