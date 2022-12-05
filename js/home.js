@@ -62,6 +62,23 @@ right_chevron.addEventListener("click", () => {
 	}
 })
 
+for (let i = 0; i < 3; ++i)
+	cbs[i].addEventListener("click", () => {
+		cws[q_state].hidden ^= true
+		cbs[q_state].hidden ^= true	
+
+		q_state = i;
+
+		cws[q_state].hidden ^= true
+		cbs[q_state].hidden ^= true
+
+		left_chevron.hidden = (q_state == 0)
+		right_chevron.hidden = (q_state == 2)
+		left_chevron_gap.hidden = (q_state != 0)
+		q_text.innerHTML = data[q_state].name
+		q_author.innerHTML = data[q_state].price
+	})
+
 left_chevron.addEventListener("click", () => {
 	cws[q_state].hidden ^= true
 	cbs[q_state].hidden ^= true
